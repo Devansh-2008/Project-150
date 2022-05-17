@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    <a-camera position = "0 8 20"></a-camera>
+        <a-assets>
+            <a-assets-item id = "table-obj" src = "./tinker.obj"></a-assets-item>
+            <a-assets-item id = "obj" src = "./obj.mtl"></a-assets-item>
+            <a-asset-item id="fence" src="./wooden_fence/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity>
+        <a-entity obj-model = "obj:#table-obj;mtl:#obj;" position = "5 0 0" rotation = "0 0 0" scale = "0.1 0.1 0.1"></a-entity>
+        </a-entity>
+        <a-entity>
+            <a-entity position="-2 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="-10 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="-20 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="-30 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="-30 -0.9 -10" rotation="0 -90 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="5 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="12 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="20 -0.9 -10" rotation="0 0 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+            <a-entity position="27 -0.9 -0.9" rotation="0 90 0" scale="0.005 0.005 0.005" gltf-model="#fence"
+              shadow="cast: true; receive: false">
+            </a-entity>
+      
+          </a-entity>    
+    </a-scene>
+</body>
+</html>
